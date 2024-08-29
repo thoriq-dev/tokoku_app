@@ -9,7 +9,7 @@ class ProductAttributesFactory extends Factory
     /**
      * The name of the factory's corresponding model.
      */
-    protected $model = \Modules\Shop\App\Models\ProductAttributes::class;
+    protected $model = \Modules\Shop\App\Models\ProductAttribute::class;
 
     /**
      * Define the model's default state.

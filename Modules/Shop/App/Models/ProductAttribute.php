@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Shop\Database\factories\ProductAttributesFactory;
 
-class ProductAttributes extends Model
+class ProductAttribute extends Model
 {
     use HasFactory, UuidTrait;
 

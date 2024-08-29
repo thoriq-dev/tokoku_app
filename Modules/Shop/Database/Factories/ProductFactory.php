@@ -27,7 +27,7 @@ class ProductFactory extends Factory
             'price' => fake()->randomfloat,
             'status' => Product::ACTIVE,
             'publish_date' => now(),
-            'excerp' => fake()->text(),
+            'excerpt' => fake()->text(),
             'body' => fake()->text(),
         ];
     }

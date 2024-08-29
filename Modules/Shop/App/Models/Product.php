@@ -78,7 +78,7 @@ class Product extends Model
 
     public function tags()
     {
-        return $this->belongsToMany('Modules\Shop\Models\Tag', 'shop_products_tags', 'product_id', 'tag_id');
+        return $this->belongsToMany('Modules\Shop\App\Models\Tag', 'shop_products_tags', 'product_id', 'tag_id');
     }
 
     // public function attributes()
@@ -88,9 +88,8 @@ class Product extends Model
 
     public function attributes()
     {
-        return $this->hasMany(ProductAttributes::class, 'product_id');
+        return $this->hasMany(ProductAttribute::class, 'product_id');
     }
-    // Script contoh dari video tutorial
 
     public function images()
     {

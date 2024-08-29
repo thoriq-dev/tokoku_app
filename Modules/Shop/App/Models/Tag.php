@@ -22,4 +22,14 @@ class Tag extends Model
     {
         return TagFactory::new();
     }
+
+    // protected static function newFactory()
+    // {
+    //     return TagFactory::new();
+    // }
+
+    public function products()
+    {
+        return $this->belongsToMany('Modules\Shop\App\Models\Product', 'shop_products_tags', 'tag_id', 'product_id');
+    }
 }
